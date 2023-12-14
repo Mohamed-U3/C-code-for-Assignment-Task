@@ -5,6 +5,7 @@
 char getStudentGender();
 void student_name(char *name);
 char getStudentAge();
+char getStudentStudyYear();
 
 void addNewStudent();
 

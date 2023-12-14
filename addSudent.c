@@ -8,6 +8,7 @@
 char studentName[MAX_NAME_LENGTH];
 char studentGender;
 char studentAge;
+char studentStudyYear;
 
 void addNewStudent()
 {
@@ -29,10 +30,12 @@ void addNewStudent()
     // getting student Age part
     printf("Age: ");
     studentAge = getStudentAge();
-    printf("Student's age: %d\n", studentAge);
+    printf("Student's age (1-30): %d\n", studentAge);
     ///////////////////////////////////////////////////////////////////////////////
     // getting student Study year part
-    printf("Study year: ");
+    printf("Study year (1-5): ");
+    studentStudyYear = getStudentStudyYear();
+    printf("Student Study Year: %d\n", studentStudyYear);
 }
 
 void student_name(char *name)
@@ -41,9 +44,8 @@ void student_name(char *name)
 
     // Remove the trailing newline character if present
     size_t length = strlen(name);
-    if (length > 0 && name[length - 1] == '\n') {
+    if (length > 0 && name[length - 1] == '\n')
         name[length - 1] = '\0';
-    }
 }
 
 char getStudentGender()
@@ -52,7 +54,7 @@ char getStudentGender()
     char isValid = 0;
 
     do {
-        printf("Enter student's gender (M/F): ");
+        //printf("Enter student's gender (M/F): ");
         gender = getchar();
 
         // Check if the input is valid
@@ -84,7 +86,7 @@ char getStudentAge()
     char isValid = 0;
 
     do {
-        printf("Enter student's age (1-30): ");
+        //printf("Enter student's age (1-30): ");
         scanf("%d", &age);
 
         // Check if the input is within the valid range
@@ -100,5 +102,29 @@ char getStudentAge()
     } while (!isValid);
 
     return age;
+}
+
+char getStudentStudyYear()
+{
+    char study_year;
+    char isValid = 0;
+
+    do {
+        //printf("Enter student's age (1-5): ");
+        scanf("%d", &study_year);
+
+        // Check if the input is within the valid range
+        if (study_year >= 1 && study_year <= 5) {
+            isValid = 1;
+        } else {
+            printf("Invalid input! Please enter an study year between 1 and 5.\n");
+        }
+
+        // Clear input buffer
+        while (getchar() != '\n'); // Clearing the input buffer
+
+    } while (!isValid);
+
+    return study_year;
 }
 
