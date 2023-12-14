@@ -16,3 +16,52 @@
 
 1702560692 d:\projects\assigntask\addsudent.h
 
+1702561704 source:d:\projects\assigntask\addsudent.c
+	<stdio.h>
+	<string.h>
+	"addSudent.h"
+
+1702571626 source:d:\projects\codeblocks projects\assigntask\addsudent.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"properties.h"
+	"addSudent.h"
+
+1702568851 d:\projects\codeblocks projects\assigntask\addsudent.h
+
+1702572162 source:d:\projects\codeblocks projects\assigntask\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+	<stdbool.h>
+	<string.h>
+	"properties.h"
+	"addSudent.h"
+	"displayStudents.h"
+
+1702567753 source:d:\projects\codeblocks projects\assigntask\hamda.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1702571505 source:d:\projects\codeblocks projects\assigntask\deletestudent.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"properties.h"
+	"deleteStudent.h"
+
+1702569196 d:\projects\codeblocks projects\assigntask\properties.h
+
+1702569251 source:d:\projects\codeblocks projects\assigntask\properties.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"properties.h"
+
+1702570518 d:\projects\codeblocks projects\assigntask\deletestudent.h
+
+1702571934 d:\projects\codeblocks projects\assigntask\displaystudents.h
+
