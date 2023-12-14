@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <stdbool.h>
 
+#include "addSudent.h"
 
 int main(){
 
@@ -12,12 +13,12 @@ int main(){
     char C = ' ';
     while(C == ' ')
     {
-        system("cls");                  //clear the screen
-        printf("1- Good morning.\n");   //print the menu in the screen
-        printf("2- Good evening.\n");
-        printf("3- clear screen.\n");
+        system("cls");                          //clear the screen
+        printf("1- Add new student data.\n");   //print the menu in the screen
+        printf("2- Delete existing student using student id.\n");
+        printf("3- Display all students.\n");
         printf("4- Exit Program.\n");
-        printf("write your choice: ");
+        printf("\n\nwrite your choice number: ");
 
 /*
  *   if purpose of this if else statement is to get the function getch() to
@@ -35,8 +36,9 @@ int main(){
 
     switch (C)
     {
-        case 'a': case 'A':         //in case A or a is pressed
+        case '1':                   //in case A or a is pressed
         printf("Good morning.");
+        addNewStudent();
         while(1)                    //wait until user press any key
         {
             if(kbhit())             //if any key is pressed
@@ -44,7 +46,7 @@ int main(){
         }
         break;
 
-        case 'b': case 'B':         //in case B or b is pressed
+        case '2':                   //in case B or b is pressed
         printf("Good evening.");
         while(1)                    //wait until user press any key
         {
@@ -53,7 +55,7 @@ int main(){
         }
         break;
 
-        case 'c': case 'C':         //in case C or c is pressed
+        case '3':                   //in case C or c is pressed
         system("cls");              //clear the screen
         while(1)                    //wait until user press any key
         {
@@ -62,7 +64,7 @@ int main(){
         }
         break;
 
-        case 'e': case 'E':         //in case E or e is pressed
+        case '4':                   //in case E or e is pressed
         printf("Exit Program.");
         while(1)                   //wait until user press any key
         {

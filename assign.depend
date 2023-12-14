@@ -6,3 +6,13 @@
 	<windows.h>
 	<stdbool.h>
 
+1702556171 source:d:\projects\assigntask\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+	<stdbool.h>
+	"addSudent.h"
+
+1702555503 d:\projects\assigntask\addsudent.h
+
